@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, Lock } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -8,27 +8,27 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-             <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-gold via-gold-light to-gold-dark rounded-full flex items-center justify-center">
-                  <span className="text-royal font-cinzel font-bold text-sm">CE</span>
-                </div>
-                <span className="font-cinzel font-bold text-lg text-white">Christ Embassy</span>
-             </div>
-             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-               3103 North National Road,<br/>
-               Columbus Indiana 47201
-             </p>
-             <div className="flex gap-4">
-               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
-                 <Facebook size={18} />
-               </a>
-               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
-                 <Instagram size={18} />
-               </a>
-               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
-                 <Youtube size={18} />
-               </a>
-             </div>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-8 h-8 bg-gradient-to-br from-gold via-gold-light to-gold-dark rounded-full flex items-center justify-center">
+                <span className="text-royal font-cinzel font-bold text-sm">CE</span>
+              </div>
+              <span className="font-cinzel font-bold text-lg text-white">Christ Embassy</span>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              3103 North National Road,<br />
+              Columbus Indiana 47201
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
+                <Facebook size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-royal transition-all duration-300">
+                <Youtube size={18} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -39,6 +39,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-400 hover:text-gold transition-colors text-sm">First Timers</a></li>
               <li><a href="#" className="text-gray-400 hover:text-gold transition-colors text-sm">Testimonies</a></li>
               <li><a href="#" className="text-gray-400 hover:text-gold transition-colors text-sm">Contact</a></li>
+              <li><a href="/admin" className="text-gray-400 hover:text-gold transition-colors text-sm flex items-center gap-2 mt-4"><Lock size={12} /> Admin Login</a></li>
             </ul>
           </div>
 
@@ -60,16 +61,16 @@ const Footer: React.FC = () => {
           {/* Contact */}
           <div>
             <h4 className="font-cinzel font-bold text-white mb-6">Contact Us</h4>
-             <ul className="space-y-4">
+            <ul className="space-y-4">
               <li className="flex items-center gap-3 text-gray-400 text-sm">
-                 <Phone size={16} className="text-gold" />
-                 <span>+1 (123) 456-7890</span>
+                <Phone size={16} className="text-gold" />
+                <span>+1 (123) 456-7890</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
-                 <Mail size={16} className="text-gold" />
-                 <span>info@christembassycolumbus.org</span>
+                <Mail size={16} className="text-gold" />
+                <span>info@christembassycolumbus.org</span>
               </li>
-             </ul>
+            </ul>
           </div>
         </div>
 
